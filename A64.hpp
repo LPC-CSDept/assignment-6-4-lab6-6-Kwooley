@@ -11,7 +11,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
+void getListprime(int begin = 2, int end = 100);
 void getListprime(int begin, int end)
 {
   int i, j;
