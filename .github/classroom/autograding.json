@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "I1",
+      "setup": "",
+      "run": "g++ -std=c++11 main.cpp && ./a.out",
+      "input": "90 10",
+      "output": "[\\w,\\W]*2[\\w,\\W]*3[\\w,\\W]*5[\\w,\\W]*7[\\w,\\W]*11[\\w,\\W]*13[\\w,\\W]*17[\\w,\\W]*19[\\w,\\W]*23[\\w,\\W]*29[\\w,\\W]*31[\\w,\\W]*37[\\w,\\W]*41[\\w,\\W]*43[\\w,\\W]*47[\\w,\\W]*53[\\w,\\W]*59[\\w,\\W]*61[\\w,\\W]*67[\\w,\\W]*71[\\w,\\W]*73[\\w,\\W]*79[\\w,\\W]*83[\\w,\\W]*89[\\w,\\W]*97[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "I2",
+      "setup": "",
+      "run": "g++ -std=c++11 main.cpp && ./a.out",
+      "input": "90 90",
+      "output": "[\\w,\\W]*97[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "I3",
+      "setup": "",
+      "run": "g++ -std=c++11 main.cpp && ./a.out",
+      "input": "70 90",
+      "output": "[\\w,\\W]*71[\\w,\\W]*73[\\w,\\W]*79[\\w,\\W]*83[\\w,\\W]*89[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
